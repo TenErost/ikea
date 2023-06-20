@@ -199,11 +199,9 @@ input{
 	height: 100%;
 	object-fit: cover;
 }
-
 .image-grid-col-2 {
 	grid-column: span 2;
 }
-
 .image-grid-row-2 {
 	grid-row: span 2;
 }
