@@ -1,196 +1,285 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>IKEA</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="family header-item"><img src="img/group.svg"><a href="">IKEA Family</a></div>
-        <img src="img/ikea.svg" class="icon">
-        <div class="track header-item"><img src="img/info.svg" alt=""><a href="">Track your order</a></div>
+      <div class="family header-item">
+        <img src="img/group.svg" /><a href="">IKEA Family</a>
+      </div>
+      <img src="img/ikea.svg" class="icon" />
+      <div class="track header-item">
+        <img src="img/info.svg" alt="" /><a href="">Track your order</a>
+      </div>
     </header>
     <div class="top-bar flex-all">
-        <div class="hamburger">
-            <button class="button-object" onclick="openNav()">
-                <span class="material-symbols-outlined">
-                    menu
-                </span>
-            </button>
-        </div>
-        <div class="search">
-            <form class="flex-all" action="#">
-                <input type="text" id="search" placeholder=" Speak your imagination" name="search">
-            </form>
-            <button>
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-            </button>
-        </div>
-        <div class="user">
-            <a href="" class="user-text">Hej! Log in here!</a>
-            <button class="button-object">
-                <span class="material-symbols-outlined">
-                    person
-                </span>
-            </button>
-        </div>
+      <div class="hamburger">
+        <button class="button-object" onclick="openNav()">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+      </div>
+      <div class="search flex-all">
+        <form class="flex-all" action="#">
+          <input
+            type="text"
+            id="search"
+            placeholder="Speak your imagination"
+            name="search"
+          />
+          <input
+          type="text"
+          id="search-low"
+          placeholder="Search"
+          name="search"
+        />
+        </form>
+        <button>
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+      </div>
+      <div class="user">
+        <a href="" class="user-text">Hej! Log in here!</a>
+        <button class="button-object">
+          <span class="material-symbols-outlined"> person </span>
+        </button>
+      </div>
     </div>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="sidenav-main">
-            <a href="#">Deals</a>
-            <a href="#">Products</a>
-            <a href="#">Rooms</a>
-            <a href="#">Inspiration</a> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="sidenav-main">
+        <a href="#">Deals</a>
+        <a href="#">Products</a>
+        <a href="#">Rooms</a>
+        <a href="#">Inspiration</a>
+      </div>
+      <div class="sidenav-secondary">
+        <a href="">IKEA Family</a>
+        <a href="">IKEA for business</a>
+        <a href="">Stores and pickup points</a>
+        <a href="">Planning tools</a>
+        <a href="">My profile</a>
+        <a href="">Track your order</a>
+        <a href="">Contact us</a>
+      </div>
+      <div class="flex-row-evenly">
+        <div class="language">
+          <button class="button-boiler flex-all">
+            English<span class="material-symbols-outlined">expand_more</span>
+          </button>
         </div>
-        <div class="sidenav-secondary">
-            <a href="">IKEA Family</a>
-            <a href="">IKEA for business</a>
-            <a href="">Stores and pickup points</a>
-            <a href="">Planning tools</a>
-            <a href="">My profile</a>
-            <a href="">Track your order</a>
-            <a href="">Contact us</a>
+        <div class="country">
+          <button class="button-boiler flex-all" style="width: 150px">
+            <span class="material-symbols-outlined">language</span>Change
+            country
+          </button>
         </div>
-        <div class="flex-row-evenly">
-            <div class="language">
-                <button class="button-boiler flex-all">English<span class="material-symbols-outlined">expand_more</span></button>
-            </div>
-            <div class="country">
-                <button class="button-boiler flex-all" style="width: 150px;"><span class="material-symbols-outlined">language</span>Change country</button>
-            </div>
-        </div>
-
+      </div>
     </div>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "280px";
-        }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "280px";
+      }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
     </script>
 
     <main>
-        <article>
-            <h1> Enjoy the spring to the fullest!</h1>
-            <div class="grid-container">
-            <div class="img-container">
-                <img class="image-grid-row-2" src="https://www.ikea.com/ext/ingkadam/m/67c34b6ac927143b/original/PH191291-crop001.jpg?f=xl alt="">
-                <img src="https://www.ikea.com/ext/ingkadam/m/3573754e6d017344/original/PH191297-crop001.jpg?f=xs">
-                <img src="https://www.ikea.com/ext/ingkadam/m/b58263b9b2a903/original/PH190435.jpg?f=xs" alt="">
-                <img src="https://www.ikea.com/ext/ingkadam/m/3f64ca033a173ba5/original/PH191228-crop001.jpg?f=xs" alt="">
-                <img src="https://www.ikea.com/ext/ingkadam/m/2a714e8a789a35eb/original/PH190464-crop001.jpg?f=xl" alt="">
-            </div>
+      <article>
+        <h1>Enjoy the spring to the fullest!</h1>
+        <div class="grid-container">
+          <div class="img-container">
+            <img class="image-grid-row-2"
+            src="https://www.ikea.com/ext/ingkadam/m/67c34b6ac927143b/original/PH191291-crop001.jpg?f=xl
+            alt="">
+            <img
+              src="https://www.ikea.com/ext/ingkadam/m/3573754e6d017344/original/PH191297-crop001.jpg?f=xs"
+            />
+            <img
+              src="https://www.ikea.com/ext/ingkadam/m/b58263b9b2a903/original/PH190435.jpg?f=xs"
+              alt=""
+            />
+            <img
+              src="https://www.ikea.com/ext/ingkadam/m/3f64ca033a173ba5/original/PH191228-crop001.jpg?f=xs"
+              alt=""
+            />
+            <img
+              src="https://www.ikea.com/ext/ingkadam/m/2a714e8a789a35eb/original/PH190464-crop001.jpg?f=xl"
+              alt=""
+            />
+          </div>
         </div>
-        </article>
+      </article>
     </main>
 
     <footer>
-        <div class="footer-grid">
-            <div class="footer-item1">
-                <h2>Join IKEA Family</h2>
-                <p>Bring your ideas to life with special discounts, inspiration, and lots of good things in store. It's all free.</p>
-                <div class="footer-link">
-                <a href="#">See more</a>
-            </div>
-                <div class="footer-join flex-all">
-                    <button class="button-object">Join or log in</button>
-                </div>
-            </div>
-            <div class="footer-item2">
-                <h2>Useful links</h2>
-                <ul>
-                    <li><a href="">Contact and help</a></li>
-                    <li><a href="">How to shop</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">IKEA guarantees</a></li>
-                    <li><a href="">Returns and claims</a></li>
-                    <li><a href="">Stores and pick up points</a></li>
-                    <li><a href="">Second life of furniture</a></li>
-                    <li><a href="">Ratings & reviews</a></li>
-                    <li><a href="">IKEA Family</a></li>
-                </ul>
-            </div>
-            <div class="footer-item3">
-                <h2>Shopping at IKEA</h2>
-                <ul>
-                    <li><a href="">Online planners</a></li>
-                    <li><a href="">Finance options</a></li>
-                    <li><a href="">Delivery</a></li>
-                    <li><a href="">Track and manage my order</a></li>
-                    <li><a href="">Gift card</a></li>
-                    <li><a href="">IKEA services</a></li>
-                </ul>
-            </div>
-            <div class="footer-item4">
-                <h2>Legal</h2>
-                <ul>
-                    <li><a href="">General terms and conditions</a></li>
-                    <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Cookies</a></li>
-                    <li><a href="">Responsible disclosure</a></li>
-                    <li><a href="">Product recalls</a></li>
-                </ul>
-            </div>
-            <div class="footer-collapsible">
-                <p>A Collapsible:</p>
-                <button class="collapsible">Open Collapsible</button>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                </div>
-                <script>
-                    var coll = document.getElementsByClassName("collapsible");
-                    var i;
-                    
-                    for (i = 0; i < coll.length; i++) {
-                      coll[i].addEventListener("click", function() {
-                        this.classList.toggle("active");
-                        var content = this.nextElementSibling;
-                        if (content.style.maxHeight){
-                          content.style.maxHeight = null;
-                        } else {
-                          content.style.maxHeight = content.scrollHeight + "px";
-                        } 
-                      });
-                    }
-                    </script>
+      <div class="footer-grid">
+        <div class="footer-item1">
+          <h2>Join IKEA Family</h2>
+          <p>
+            Bring your ideas to life with special discounts, inspiration, and
+            lots of good things in store. It's all free.
+          </p>
+          <div class="footer-link">
+            <a href="#">See more</a>
+          </div>
+          <div class="footer-join flex-all">
+            <button class="button-object">Join or log in</button>
+          </div>
         </div>
-        <div class="lower-footer flex-all" style="justify-content: space-between;">
+        <div class="footer-item2">
+          <h2>Useful links</h2>
+          <ul>
+            <li><a href="">Contact and help</a></li>
+            <li><a href="">How to shop</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">IKEA guarantees</a></li>
+            <li><a href="">Returns and claims</a></li>
+            <li><a href="">Stores and pick up points</a></li>
+            <li><a href="">Second life of furniture</a></li>
+            <li><a href="">Ratings & reviews</a></li>
+            <li><a href="">IKEA Family</a></li>
+          </ul>
+        </div>
+        <div class="footer-item3">
+          <h2>Shopping at IKEA</h2>
+          <ul>
+            <li><a href="">Online planners</a></li>
+            <li><a href="">Finance options</a></li>
+            <li><a href="">Delivery</a></li>
+            <li><a href="">Track and manage my order</a></li>
+            <li><a href="">Gift card</a></li>
+            <li><a href="">IKEA services</a></li>
+          </ul>
+        </div>
+        <div class="footer-item4">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="">General terms and conditions</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Responsible disclosure</a></li>
+            <li><a href="">Product recalls</a></li>
+          </ul>
+        </div>
+        <div class="collapsible-footer">
+          <button class="collapsible"><h2>Join IKEA Family</h2></button>
+          <div class="content">
+            <p>
+              Bring your ideas to life with special discounts, inspiration, and
+              lots of good things in store. It's all free.
+            </p>
+            <div class="footer-link">
+              <a href="#">See more</a>
+            </div>
+            <div class="footer-join flex-all">
+              <button class="button-object">Join or log in</button>
+            </div>
+          </div>
+          <button class="collapsible"><h2>Useful links</h2></button>
+          <div class="content">
+            <ul>
+              <li><a href="">Contact and help</a></li>
+              <li><a href="">How to shop</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">IKEA guarantees</a></li>
+              <li><a href="">Returns and claims</a></li>
+              <li><a href="">Stores and pick up points</a></li>
+              <li><a href="">Second life of furniture</a></li>
+              <li><a href="">Ratings & reviews</a></li>
+              <li><a href="">IKEA Family</a></li>
+            </ul>
+          </div>
+          <button class="collapsible"><h2>Shopping at IKEA</h2></button>
+          <div class="content">
+            <ul>
+              <li><a href="">Online planners</a></li>
+              <li><a href="">Finance options</a></li>
+              <li><a href="">Delivery</a></li>
+              <li><a href="">Track and manage my order</a></li>
+              <li><a href="">Gift card</a></li>
+              <li><a href="">IKEA services</a></li>
+            </ul>
+          </div>
+          <button class="collapsible"><h2>Legal</h2></button>
+          <div class="content">
+            <ul>
+              <li><a href="">General terms and conditions</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Cookies</a></li>
+              <li><a href="">Responsible disclosure</a></li>
+              <li><a href="">Product recalls</a></li>
+            </ul>
+          </div>
+          <div class="lower-footer flex-all" style="justify-content: space-between">
             <div class="lower-footer-cards flex-row-evenly">
-                <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/visa.svg" alt="">
-                <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/visa-electron.svg" alt="">
-                <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/master-card.svg" alt="">
-                <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/go-pay.svg" alt="">
-                <img src="https://www.ikea.com/global/assets/logos/external-payment-providers/paypal.svg" alt="">
+              <img
+                src="https://www.ikea.com/global/assets/logos/external-payment-providers/visa.svg"
+                alt=""
+              />
+              <img
+                src="https://www.ikea.com/global/assets/logos/external-payment-providers/visa-electron.svg"
+                alt=""
+              />
+              <img
+                src="https://www.ikea.com/global/assets/logos/external-payment-providers/master-card.svg"
+                alt=""
+              />
+              <img
+                src="https://www.ikea.com/global/assets/logos/external-payment-providers/go-pay.svg"
+                alt=""
+              />
+              <img
+                src="https://www.ikea.com/global/assets/logos/external-payment-providers/paypal.svg"
+                alt=""
+              />
             </div>
             <div class="lower-footer-buttons flex-row-evenly">
-                <div class="country">
-                    <button class="button-boiler flex-all" style="width: 150px;"><span class="material-symbols-outlined">language</span>Change country</button>
-                </div>
-                <div class="language">
-                    <button class="button-boiler flex-all">English<span class="material-symbols-outlined">expand_more</span></button>
-                </div>
+              <div class="country">
+                <button class="button-boiler flex-all" style="width: 150px">
+                  <span class="material-symbols-outlined">language</span>Change
+                  country
+                </button>
+              </div>
+              <div class="language">
+                <button class="button-boiler flex-all">
+                  English<span class="material-symbols-outlined">expand_more</span>
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="footer-credits"></div>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+              } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            });
+          }
+        </script>
+      </div>
+     
+      <div class="footer-credits"></div>
     </footer>
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>
