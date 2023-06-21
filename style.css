@@ -327,7 +327,6 @@ footer{
   }
 
 /* ##############MEADIAQUERIES############ */
-/* Anything under 1024px */
 @media screen and (max-width: 1024px) {
 	.img-container {
 		--num-cols: 2;
@@ -336,6 +335,9 @@ footer{
 	}
     .user-text{
         display: none;
+    }
+    footer{
+        padding: 0rem 3rem;
     }
     .footer-grid{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -357,11 +359,15 @@ footer{
     #search-low{
         display: block;
     }
+    article > h1{
+        margin: 1rem 2rem;
+        text-align: center;
+    }
     .img-container {
         --gap: 16px;
         --num-cols: 2;
         --row-height: 200px;
-        margin: 1rem 3rem;
+        margin: 0rem 2rem;
         display: grid;
         grid-template-columns: repeat(var(--num-cols), 1fr);
         grid-template-rows: 4;
@@ -388,6 +394,7 @@ footer{
     }
     .footer-grid{
         grid-template-columns: 1fr;
+        padding-top: 1rem;
     }
     .lower-footer{
         flex-direction: column;
