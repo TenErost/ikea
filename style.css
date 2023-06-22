@@ -5,6 +5,7 @@
     --gray-on-gray:#e4e4e4;
     --scrollbar:#b6b6b6;
 }
+/* TIME WASTED: 13 HR */
 *{
     margin: 0;
     box-sizing: border-box;
@@ -33,7 +34,8 @@ html{
 .align-right{
     text-align: right;
 }
-.button-boiler{
+
+.button-boiler{ /* Zaklad pro button div */
     background-color: transparent;
     border-radius: 3rem;
     border: #000000 solid 1px;
@@ -45,7 +47,7 @@ html{
     font-weight: bold;
     cursor: pointer;
 }
-.button-object{
+.button-object{ /* Zaklad pro samotny button element */
     background: none;
 	color: inherit;
 	border: none;
@@ -62,9 +64,6 @@ header{
     align-items: center;
     justify-content: center;
     gap: 4rem;
-}
-.icon{
-    height: 2.5rem;
 }
 .header-item img{
     height: 1.5rem;
@@ -88,7 +87,7 @@ a:hover{
     text-decoration: underline;
 }
 /* ##################SEARCHBAR################### */
-.top-bar{
+.top-bar{ 
     width: 100%;
     height: 4rem;
     background-color: white;
@@ -126,7 +125,7 @@ a:hover{
 input{
     background-color: transparent;
 }
-#search-low{
+#search-low{ /* Změna širokého search baru za menší pro telefony */
     display: none;
 }
 .search button{
@@ -166,7 +165,7 @@ input{
     background-color: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(5px);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.4s;
     padding: 60px 0px;
 }
 .sidenav-main a{
@@ -177,13 +176,13 @@ input{
 .sidenav-secondary a{
     font-weight: lighter;
     font-size: 18px;
-    white-space:pre; 
+    white-space:pre; /* Aby se text nezalamoval při zasouvání divu */
 }
 .sidenav a {
     padding: 8px;
     text-decoration: none;
     color: black;
-    display: block;
+    display: block; /* Hodně důležitý */
     transition: 0.3s;
 }
 .sidenav a:hover {
@@ -218,13 +217,8 @@ input{
 .image-grid-row-2 {
 	grid-row: span 2;
 }
-.grid-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .img-board > h1{
-margin: 2rem 6rem;
+    margin: 2rem 6rem;
 }
 .slider-article >p,h1{
     margin: 1rem 6rem;
@@ -264,7 +258,7 @@ footer{
     padding: 0px 6rem;
 }
 .footer-grid {
-    padding-top: 4rem;
+    padding: 4rem 0rem 1rem 0rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -272,8 +266,8 @@ footer{
     grid-auto-flow: row;
     grid-template-areas:
       "footer-item1 footer-item2 footer-item3 footer-item4 footer-item5";
-    height: 32rem;
     font-size: 14px;
+
 }
 .footer-grid h2{
     color: black;
@@ -298,17 +292,17 @@ footer{
     margin: 1rem 0rem;
 }
 .footer-link{
-    margin:1rem 0rem;
+    margin: 1rem 0rem;
     text-decoration: underline;
 }
   
   .footer-item1 { grid-area: footer-item1; }
   .footer-item2 { grid-area: footer-item2; }
-  .footer-item3 { grid-area: footer-item3; }
+  .footer-item3 { grid-area: footer-item3; } /* Tohle asi neni nejlepší způsob ale ¯\_(ツ)_/¯ */
   .footer-item4 { grid-area: footer-item4; }
   .footer-item5 { grid-area: footer-item5; }
 
-.footer-join{
+.footer-join{ /* Tlačítko pro registraci ve footeru, nepoužívá boiler button jelikož by to bylo moc práce */
     background-color: black;
     border-radius: 3rem;
     color: white;
@@ -320,9 +314,6 @@ footer{
 }
 .footer-join button{
     padding: 0px;
-}
-.footer-collapsible{
-    display: none;
 }
 /* ###############LOWERFOOTER############### */
 .lower-footer{
@@ -341,8 +332,8 @@ footer{
     width: 20rem;
 }
 /* ################COLLAPSIBLE################## */
-.collapsible-footer{
-    display: none;
+.collapsible-footer{ /* Ukáže se až pod 550px */
+    display: none; 
 }
 .collapsible {
     background-color: transparent;
@@ -356,21 +347,20 @@ footer{
     font-size: 15px;
   }
   
-  .active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color:var(--gray-on-gray);
-  }
-  
-  .content {
+}
+.content { /* Obsah baličů pod footerem */
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-  }
+}
 
 /* ##############MEADIAQUERIES############ */
 @media screen and (max-width: 1024px) {
-	.img-container {
+	.img-container { /* Mění grid v prvním articlu aby vypadal poživatelně na mobilu */
 		--num-cols: 2;
 		--row-height: 200px;
         padding: 1rem 0rem;
@@ -393,7 +383,7 @@ footer{
         display: none;
     }
     .track{
-        display: none;
+        display: none;  /* SCSS by tohle nedovolil */
     }
     #search{
         display: none;
@@ -406,7 +396,7 @@ footer{
         text-align: center;
     }
     .img-board >h1{
-        margin: 1rem 2rem;
+        margin: 1rem 2rem; /* Na tohle taky nejsem pyšnej */
     }
     .slider-article > p{
         margin:1rem 2rem
@@ -435,7 +425,7 @@ footer{
         display: none;
     }
     .footer-item3{
-        display: none;
+        display: none; /* 🙁 */
     }
     .footer-item4{
         display: none;
