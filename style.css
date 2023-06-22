@@ -23,6 +23,16 @@ html{
     flex-direction: row;
     justify-content: space-evenly;
 }
+.flex-align{
+    display: flex;
+    align-items: center;
+}
+.flex-justify{
+    justify-content: center;
+}
+.align-right{
+    text-align: right;
+}
 .button-boiler{
     background-color: transparent;
     border-radius: 3rem;
@@ -218,6 +228,8 @@ margin: 2rem 6rem;
 }
 .slider-article >p,h1{
     margin: 1rem 6rem;
+    text-align: left;
+    display: flex;
 }
 .img-slider img {
     padding: 10px;
@@ -392,6 +404,15 @@ footer{
     article > h1{
         margin: 1rem 2rem;
         text-align: center;
+    }
+    .img-board >h1{
+        margin: 1rem 2rem;
+    }
+    .slider-article > p{
+        margin:1rem 2rem
+    }
+    .img-slider{
+        padding: 1rem;
     }
     .img-container {
         --gap: 16px;
