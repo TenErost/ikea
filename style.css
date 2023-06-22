@@ -13,6 +13,7 @@
 html{
     font-family: 'Lato', sans-serif;
 }
+
 /* #################GLOBALS####################### */
 .flex-all{
     display: flex;
@@ -56,6 +57,7 @@ html{
 	cursor: pointer;
 	outline: inherit;
 }
+
 /* ###################HEADER###################### */
 header{
     background-color:#0e56a7;
@@ -86,6 +88,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
 /* ##################SEARCHBAR################### */
 .top-bar{ 
     width: 100%;
@@ -150,6 +153,7 @@ input{
     color: black;
     font-weight:600;
 }
+
 /* ###############SIDENAVIGATION################# */
 .sidenav {
     font-family: 'Lato', sans-serif;
@@ -194,6 +198,7 @@ input{
     left: 10px;
     font-size: 36px;
 }
+
 /* #################CONTENT################# */
 .img-container {
 	--gap: 16px;
